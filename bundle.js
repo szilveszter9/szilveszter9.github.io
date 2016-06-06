@@ -4399,7 +4399,15 @@ var Computer = exports.Computer = function (_BasePlayer2) {
         return global.pubSub.publish('beforeChooseCharacter', {
           playerType: this.getType()
         }).then(function ($await_2) {
-          return $return([null, randomIndex]);
+          return function () {
+            return new Promise(function ($return, $error) {
+              setTimeout(function () {
+                return $return();
+              }, 500);
+            }.$asyncbind(this));
+          }().then(function ($await_3) {
+            return $return([null, randomIndex]);
+          }.$asyncbind(this, $error), $error);
         }.$asyncbind(this, $error), $error);
       }.$asyncbind(this));
     }
