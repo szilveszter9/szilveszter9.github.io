@@ -1,17 +1,22 @@
 #webApp {
   position: relative;
 }
+#Results {
+  width: 100%;
+}
+.main {
+  position: relative;
+}
 .logo img {
   max-height: 416px;
   max-height: 26rem;
   max-width: 100%;
   width: auto;
 }
-.Header {
-  clear: both;
-}
 .Menu {
-  clear: both;
+  position: absolute;
+  top: 57.6px;
+  top: 3.6rem;
 }
 .Menu button,
 .ResultsMenu button {
@@ -23,10 +28,15 @@
   max-width: 10rem;
 }
 .Game {
-  clear: both;
+  position: absolute;
+  top: 57.6px;
+  top: 3.6rem;
 }
-.Choose {
-  clear: both;
+.Results {
+  width: 100%;
+  position: absolute;
+  top: 57.6px;
+  top: 3.6rem;
 }
 .Game .Results .Winner h2 {
   padding-top: 0;
@@ -201,7 +211,6 @@ button img {
   z-index: -999;
   height: 0;
   opacity: 0;
-  position: relative;
   top: -48px;
   top: -3rem;
   -webkit-transition: all 0.5s ease-in;
@@ -223,10 +232,11 @@ button img {
 .Game,
 #Results,
 #CharacterOptions {
+  width: 100%;
   opacity: 1;
   visibility: visible;
-  position: relative;
-  top: 0;
+  top: 57.6px;
+  top: 3.6rem;
   -webkit-transition: opacity 0.5s ease-in, height 0.5s ease-in;
   transition: opacity 0.5s ease-in, height 0.5s ease-in;
 }
