@@ -3,6 +3,8 @@
 }
 #Results {
   width: 100%;
+  position: absolute;
+  top: 0;
 }
 .main {
   position: relative;
@@ -35,8 +37,6 @@
 .Results {
   width: 100%;
   position: absolute;
-  top: 57.6px;
-  top: 3.6rem;
 }
 .Game .Results .Winner h2 {
   padding-top: 0;
@@ -235,8 +235,6 @@ button img {
   width: 100%;
   opacity: 1;
   visibility: visible;
-  top: 57.6px;
-  top: 3.6rem;
   -webkit-transition: opacity 0.5s ease-in, height 0.5s ease-in;
   transition: opacity 0.5s ease-in, height 0.5s ease-in;
 }
