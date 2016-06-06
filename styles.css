@@ -1,0 +1,233 @@
+#webApp {
+  position: relative;
+}
+.logo img {
+  max-height: 416px;
+  max-height: 26rem;
+  max-width: 100%;
+  width: auto;
+}
+.Header {
+  clear: both;
+}
+.Menu {
+  clear: both;
+}
+.Menu button,
+.ResultsMenu button {
+  min-height: 64px;
+  min-height: 4rem;
+}
+.ResultsMenu button {
+  max-width: 160px;
+  max-width: 10rem;
+}
+.Game {
+  clear: both;
+}
+.Choose {
+  clear: both;
+}
+.Game .Results .Winner h2 {
+  padding-top: 0;
+}
+.Winner h2 {
+  color: #994624;
+  text-shadow: 1.6px 1.6px 1.6px white;
+  text-shadow: 0.1rem 0.1rem 0.1rem white;
+}
+.AppliedRuleImage {
+  clear: both;
+}
+.AppliedRuleImage img {
+  max-width: 100%;
+  max-height: 320px;
+  max-height: 20rem;
+  width: auto;
+}
+.AppliedRuleText {
+  clear: both;
+}
+html {
+  color: #6666ff;
+  background-color: #cfcfff;
+  text-shadow: 1.6px 1.6px 1.6px white;
+  text-shadow: 0.1rem 0.1rem 0.1rem white;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  height: calc(100% - 1rem * 2);
+  padding: 16px;
+  padding: 1rem;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow-x: auto;
+  overflow-y: scroll;
+}
+body {
+  font-size: 25.6px;
+  font-size: 1.6rem;
+}
+body img {
+  max-width: 100%;
+  width: auto;
+}
+button {
+  cursor: pointer;
+  background-color: #b8b8ff;
+}
+button:focus,
+button:hover {
+  border: 3.2px solid #994624;
+  border: 0.2rem solid #994624;
+}
+button img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+}
+h1 {
+  font-size: 32px;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0 0 16px;
+  padding: 0 0 1rem;
+}
+h2 {
+  font-size: 22.4px;
+  font-size: 1.4rem;
+  margin: 0;
+  padding: 16px 0;
+  padding: 1rem 0;
+}
+h1,
+h2 {
+  clear: both;
+}
+@media (max-width: 319px) {
+  html {
+    width: 18rem;
+    font-size: 44%;
+  }
+}
+@media (min-width: 319px) and (max-width: 374px) {
+  html {
+    font-size: 56%;
+  }
+}
+@media (min-width: 375px) and (max-width: 434px) {
+  html {
+    font-size: 68%;
+  }
+}
+@media (min-width: 435px) and (max-width: 567px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media (min-width: 568px) and (max-width: 599px) {
+  html {
+    font-size: 85%;
+  }
+}
+@media (min-width: 600px) and (max-width: 749px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media (min-width: 750px) and (max-width: 979px) {
+  html {
+    font-size: 95%;
+  }
+}
+@media (min-width: 980px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media (max-width: 749px) {
+html {
+  width: calc(100% - 1rem * 2);
+  margin: 0;
+}
+}
+@media (min-width: 750px) {
+html {
+  width: 45rem;
+  margin: 0 calc((100% - 45rem - 1rem * 2) / 2);
+  border-width: 0 0.1rem;
+  border-color: #c7c7f7;
+  border-style: solid;
+}
+}
+@media (min-width: 600px) {
+
+button {
+  width: 33.3%;
+}
+
+.Menu button,
+.ResultsMenu button {
+  width: 50%;
+}
+}
+@media (max-width: 599px) {
+button {
+  width: 50%;
+}
+}
+@media (max-width: 374px) {
+
+button {
+  width: 100%;
+}
+
+button img {
+  max-height: 10rem;
+  margin-top: 0.2rem;
+}
+
+.Menu button,
+.ResultsMenu button {
+  width: 50%;
+}
+}
+.Menu.hidden,
+.Game.hidden,
+#Results.hidden,
+#CharacterOptions.hidden {
+  pointer-events: none;
+  visibility: hidden;
+  z-index: -999;
+  height: 0;
+  opacity: 0;
+  position: relative;
+  top: -48px;
+  top: -3rem;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+.Menu.hidden button,
+.Game.hidden button {
+  pointer-events: none;
+  visibility: hidden;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  height: 0;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+.Menu,
+.Game,
+#Results,
+#CharacterOptions {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+  top: 0;
+  -webkit-transition: opacity 0.5s ease-in, height 0.5s ease-in;
+  transition: opacity 0.5s ease-in, height 0.5s ease-in;
+}
