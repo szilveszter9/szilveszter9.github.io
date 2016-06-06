@@ -49,7 +49,7 @@
   clear: both;
 }
 html {
-  color: #6666ff;
+  color: #66f;
   background-color: #cfcfff;
   text-shadow: 1.6px 1.6px 1.6px white;
   text-shadow: 0.1rem 0.1rem 0.1rem white;
@@ -79,8 +79,7 @@ button {
 }
 button:focus,
 button:hover {
-  border: 3.2px solid #994624;
-  border: 0.2rem solid #994624;
+  background-color: #9797fd;
 }
 button img {
   max-width: 100%;
